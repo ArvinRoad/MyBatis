@@ -52,7 +52,7 @@ MyBatis核心配置文件
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/mybatis?useSSL=true&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;"/>
                 <property name="username" value="root"/>
                 <property name="password" value="1917723401Syc"/>
             </dataSource>
@@ -97,4 +97,32 @@ MyBatis项目资源导入出错配置文件
             </resource>
         </resources>
     </build>
+```
+
+MyBatis官方建议SQL资源正常手动关闭
+```java
+public class UserDaoTest {
+    @Test
+    public void test(){
+        //获取SqlSession
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+
+        //手动关闭(确保所有数据库资源都能被正常的关闭)
+        try {
+            //getMapper 执行SQL
+            UserDao userDao = sqlSession.getMapper(UserDao.class);
+            List<User> userList = userDao.getUserList();
+            
+            for (User user : userList) {
+                System.out.println(user);
+            }
+        }catch (Exception e){ 
+            //抛出异常（这个异常是不会成功捕获的，只是官方建议这样写）
+            e.printStackTrace();
+        }finally {
+            //关闭SqlSession
+            sqlSession.close();
+        }
+    }
+}
 ```
