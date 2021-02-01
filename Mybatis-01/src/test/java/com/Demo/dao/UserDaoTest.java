@@ -18,7 +18,14 @@ public class UserDaoTest {
         UserDao userDao = sqlSession.getMapper(UserDao.class);
         List<User> userList = userDao.getUserList();
 
+        //方式二：了解就可以（已经过时了）
+        List<User> UserList02 = sqlSession.selectList("com.Demo.dao.UserDao.getUserList");
+
         for (User user : userList) {
+            System.out.println(user);
+        }
+
+        for (User user : UserList02) {
             System.out.println(user);
         }
 
