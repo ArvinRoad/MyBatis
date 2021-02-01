@@ -35,4 +35,20 @@ public class UserDaoTest {
 
         sqlSession.close();
     }
+
+    //增删改需要提交事务
+    @Test
+    public void addUserTest(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        int res = mapper.addUser(new User(5, "MsLi", "66554477"));
+
+        if (res>0){
+            System.out.println("addUser执行成功，用户已添加");
+        }
+        //提交事务
+        sqlSession.commit();
+
+        sqlSession.close();
+    }
 }

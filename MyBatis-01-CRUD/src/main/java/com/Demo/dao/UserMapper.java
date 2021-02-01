@@ -10,4 +10,8 @@ public interface UserMapper {
 
     //根据ID查询用户
     User getUserById(int id);
+
+    //insert（增加/插入）一个用户
+    int addUser(User user);
+
 }
