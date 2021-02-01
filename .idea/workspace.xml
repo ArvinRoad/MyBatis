@@ -58,7 +58,7 @@
       <recent name="F:\MyBatis\Mybatis-01\target\test-classes\com\Demo\dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest.addUserTest">
+  <component name="RunManager" selected="JUnit.UserDaoTest (1)">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -101,7 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest.getUserByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserDaoTest.deleteUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBatis-01-CRUD" />
       <extension name="coverage">
         <pattern>
@@ -111,7 +111,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.Demo.dao" />
       <option name="MAIN_CLASS_NAME" value="com.Demo.dao.UserDaoTest" />
-      <option name="METHOD_NAME" value="getUserByIdTest" />
+      <option name="METHOD_NAME" value="deleteUserTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,8 +149,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mybatis-01" />
+    <configuration name="UserDaoTest.updateUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatis-01-CRUD" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.Demo.dao.*" />
@@ -159,7 +159,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.Demo.dao" />
       <option name="MAIN_CLASS_NAME" value="com.Demo.dao.UserDaoTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="METHOD_NAME" value="updateUserTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoTest (1)" />
+        <item itemvalue="JUnit.UserDaoTest.deleteUserTest" />
+        <item itemvalue="JUnit.UserDaoTest.updateUserTest" />
         <item itemvalue="JUnit.UserDaoTest.addUserTest" />
         <item itemvalue="JUnit.UserDaoTest.test (1)" />
-        <item itemvalue="JUnit.UserDaoTest (1)" />
-        <item itemvalue="JUnit.UserDaoTest.getUserByIdTest" />
-        <item itemvalue="JUnit.UserDaoTest.getUserByIdTest" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +186,7 @@
       <workItem from="1612032929133" duration="2943000" />
       <workItem from="1612067103318" duration="13051000" />
       <workItem from="1612165932197" duration="176000" />
-      <workItem from="1612166132692" duration="21871000" />
+      <workItem from="1612166132692" duration="23758000" />
     </task>
     <servers />
   </component>

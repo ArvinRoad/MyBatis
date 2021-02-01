@@ -14,4 +14,9 @@ public interface UserMapper {
     //insert（增加/插入）一个用户
     int addUser(User user);
 
+    //修改用户
+    int updateUser(User user);
+
+    //删除一个用户
+    int deleteUser(int id);
 }

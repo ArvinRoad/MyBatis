@@ -51,4 +51,30 @@ public class UserDaoTest {
 
         sqlSession.close();
     }
+
+    @Test
+    public void updateUserTest(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        int upd = mapper.updateUser(new User(1, "Syc", "1917723401Syc"));
+        if (upd>0){
+            System.out.println("updateUser执行成功，用户已修改");
+        }
+        sqlSession.commit();
+
+        sqlSession.close();
+    }
+
+    @Test
+    public void deleteUserTest(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        int dlu = mapper.deleteUser(5);
+        if (dlu>0){
+            System.out.println("deleteUser执行成功，用户已删除");
+        }
+        sqlSession.commit();
+        sqlSession.close();
+    }
 }
