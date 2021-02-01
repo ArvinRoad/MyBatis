@@ -5,7 +5,9 @@ import com.Demo.utils.MybatisUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class UserTest {
     @Test
@@ -40,6 +42,24 @@ public class UserTest {
         int addUser = mapper.addUser(new User(5, "MyLise", "7788995566"));
         if (addUser>0){
             System.out.println("addUser执行成功，用户已添加");
+        }
+        sqlSession.commit();
+        sqlSession.close();
+    }
+
+    @Test
+    public void addUser02Test(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        //创建Map
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("userid",5);
+        map.put("username","TiMLie");
+        map.put("password","999888777");
+
+        int addUser02 = mapper.addUser02(map);
+        if (addUser02>0){
+            System.out.println("addUser02执行成功，用户已通过Map创建");
         }
         sqlSession.commit();
         sqlSession.close();
