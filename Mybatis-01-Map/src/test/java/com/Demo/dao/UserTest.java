@@ -36,6 +36,19 @@ public class UserTest {
     }
 
     @Test
+    public void getUserId02Test(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+
+        //创建Map
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("id",1);
+        User userId02 = mapper.getUserId02(map);
+        System.out.println(userId02);
+        sqlSession.close();
+    }
+
+    @Test
     public void addUserTest(){
         SqlSession sqlSession = MybatisUtils.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);

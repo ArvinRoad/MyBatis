@@ -12,6 +12,10 @@
         select * from mybatis.user where id = #{id};
     </select>
 
+    <select id="getUserId02" parameterType="map" resultType="com.Demo.pojo.User">
+        select * from mybatis.user where id = #{id} and name = #{name};
+    </select>
+
     <insert id="addUser" parameterType="com.Demo.pojo.User">
         insert into mybatis.user (id, name, pwd) VALUES (#{id},#{name},#{pwd});
     </insert>
