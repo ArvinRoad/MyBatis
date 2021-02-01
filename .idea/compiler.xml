@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="MyBatis-01-CRUD" />
         <module name="Mybatis-01" />
+        <module name="Mybatis-01-Map" />
       </profile>
     </annotationProcessing>
   </component>

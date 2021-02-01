@@ -58,14 +58,16 @@
       <recent name="F:\MyBatis\Mybatis-01\target\test-classes\com\Demo\dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest (1)">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserTest">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -81,22 +83,6 @@
       <option name="PACKAGE_NAME" value="com.Demo.dao" />
       <option name="MAIN_CLASS_NAME" value="com.Demo.dao.UserDaoTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest.addUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyBatis-01-CRUD" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.Demo.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.Demo.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.Demo.dao.UserDaoTest" />
-      <option name="METHOD_NAME" value="addUserTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,8 +103,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest.getUserByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyBatis-01-CRUD" />
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis-01-Map" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.Demo.dao.*" />
@@ -126,15 +112,30 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.Demo.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.Demo.dao.UserDaoTest" />
-      <option name="METHOD_NAME" value="getUserByIdTest" />
+      <option name="MAIN_CLASS_NAME" value="com.Demo.dao.UserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.getUserIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis-01-Map" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Demo.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Demo.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.Demo.dao.UserTest" />
+      <option name="METHOD_NAME" value="getUserIdTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyBatis-01-CRUD" />
+    <configuration name="UserTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis-01-Map" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.Demo.dao.*" />
@@ -142,24 +143,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.Demo.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.Demo.dao.UserDaoTest" />
+      <option name="MAIN_CLASS_NAME" value="com.Demo.dao.UserTest" />
       <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest.updateUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyBatis-01-CRUD" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.Demo.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.Demo.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.Demo.dao.UserDaoTest" />
-      <option name="METHOD_NAME" value="updateUserTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest" />
+        <item itemvalue="JUnit.UserTest.getUserIdTest" />
+        <item itemvalue="JUnit.UserTest.test" />
         <item itemvalue="JUnit.UserDaoTest (1)" />
         <item itemvalue="JUnit.UserDaoTest.deleteUserTest" />
-        <item itemvalue="JUnit.UserDaoTest.updateUserTest" />
-        <item itemvalue="JUnit.UserDaoTest.addUserTest" />
-        <item itemvalue="JUnit.UserDaoTest.test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +171,8 @@
       <workItem from="1612032929133" duration="2943000" />
       <workItem from="1612067103318" duration="13051000" />
       <workItem from="1612165932197" duration="176000" />
-      <workItem from="1612166132692" duration="23758000" />
+      <workItem from="1612166132692" duration="24229000" />
+      <workItem from="1612196976462" duration="7568000" />
     </task>
     <servers />
   </component>
@@ -215,5 +201,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
