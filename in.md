@@ -62,3 +62,39 @@ MyBatis核心配置文件
 
 </configuration>
 ```
+
+MyBatis项目Mapper.xml文件配置注册
+
+报错码： org.apache.ibatis.binding.BindingException: Type interface com.Demo.dao.UserDao is not known to the MapperRegistry.
+```xml
+<!--每一个Mapper.xml都需要在MyBatis核心配置文件中注册-->
+    <mappers>
+        <mapper resource="com/Demo/dao/UserMapper.xml"/>
+    </mappers>
+```
+MyBatis项目资源导入出错配置文件
+
+报错码：java.lang.ExceptionInInitializerError[The error may exist in com/Demo/dao/UserMapper.xml]
+```xml
+    <!--在build中配置resources，来防止我们资源导出失败的问题-->
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
+```
