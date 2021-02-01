@@ -13,8 +13,8 @@ public class UserDaoTest {
         SqlSession sqlSession = MybatisUtils.getSqlSession();
 
         try {
-            UserDao userDao = sqlSession.getMapper(UserDao.class);
-            List<User> userList = userDao.getUserList();
+            UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+            List<User> userList = mapper.getUserList();
             for (User user : userList) {
                 System.out.println(user);
             }
