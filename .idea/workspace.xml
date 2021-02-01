@@ -51,14 +51,14 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15429688" />
     <property name="project.structure.side.proportion" value="0.49947312" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.SQL" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\MyBatis\Mybatis-01\target\test-classes\com\Demo\dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.getUserId02Test">
+  <component name="RunManager" selected="JUnit.UserTest.getUserLike02">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -68,21 +68,6 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mybatis-01-Map" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.Demo.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.Demo.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.Demo.dao.UserTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,7 +120,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.getUserIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.getUserLike" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis-01-Map" />
       <extension name="coverage">
         <pattern>
@@ -145,7 +130,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.Demo.dao" />
       <option name="MAIN_CLASS_NAME" value="com.Demo.dao.UserTest" />
-      <option name="METHOD_NAME" value="getUserIdTest" />
+      <option name="METHOD_NAME" value="getUserLike" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.getUserLike02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis-01-Map" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Demo.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Demo.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.Demo.dao.UserTest" />
+      <option name="METHOD_NAME" value="getUserLike02" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.getUserLike02" />
+        <item itemvalue="JUnit.UserTest.getUserLike" />
         <item itemvalue="JUnit.UserTest.getUserId02Test" />
         <item itemvalue="JUnit.UserTest.addUser02Test" />
         <item itemvalue="JUnit.UserTest.deleteUserTest" />
-        <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.UserTest.getUserIdTest" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +174,7 @@
       <workItem from="1612067103318" duration="13051000" />
       <workItem from="1612165932197" duration="176000" />
       <workItem from="1612166132692" duration="24229000" />
-      <workItem from="1612196976462" duration="9948000" />
+      <workItem from="1612196976462" duration="12056000" />
     </task>
     <servers />
   </component>

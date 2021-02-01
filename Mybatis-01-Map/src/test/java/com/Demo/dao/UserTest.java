@@ -11,6 +11,24 @@ import java.util.Map;
 
 public class UserTest {
     @Test
+    public void getUserLike(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        List<User> love = mapper.getUserLike("%亢%");
+        System.out.println(love);
+        sqlSession.close();
+    }
+
+    @Test
+    public void getUserLike02(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        List<User> love = mapper.getUserLike02("亢");
+        System.out.println(love);
+        sqlSession.close();
+    }
+
+    @Test
     public void test(){
         SqlSession sqlSession = MybatisUtils.getSqlSession();
         try {

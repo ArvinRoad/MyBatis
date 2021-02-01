@@ -6,6 +6,10 @@ import java.util.List;
 import java.util.Map;
 
 public interface UserMapper {
+    //模糊查询
+    List<User>getUserLike(String value);
+    List<User> getUserLike02(String value);
+
     List<User> getUserList();
     User getUserId(int id);
     //Map02
