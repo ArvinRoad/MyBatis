@@ -12,6 +12,14 @@
         <property name="password" value="1917723401"/>
     </properties>
 
+    <!--别名,可以给实体类起别名-->
+    <typeAliases>
+        <!--指定一个包-->
+        <package name="com.Demo.pojo"/>
+        <!--指定实体类-->
+        <!--<typeAlias type="com.Demo.pojo.User" alias="User"/>-->
+    </typeAliases>
+
     <environments default="properties">
         <environment id="development">
             <transactionManager type="JDBC"/>

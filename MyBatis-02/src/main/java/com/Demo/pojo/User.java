@@ -1,5 +1,9 @@
 package com.Demo.pojo;
 
+import org.apache.ibatis.type.Alias;
+
+//通过注解自定义别名
+@Alias("AUser")
 public class User {
     private int id;
     private String name;

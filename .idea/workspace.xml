@@ -64,7 +64,7 @@
       <recent name="com.Demo.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest">
+  <component name="RunManager" selected="JUnit.UserDaoTest.getUserList">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -157,8 +157,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="JUnit.UserDaoTest.getUserList" />
+        <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="JUnit.UserDaoTest.deleteUser" />
         <item itemvalue="JUnit.UserDaoTest.updateUser" />
         <item itemvalue="JUnit.UserDaoTest.addUser" />
@@ -180,7 +180,7 @@
       <workItem from="1612196976462" duration="15549000" />
       <workItem from="1612251669216" duration="810000" />
       <workItem from="1612252489925" duration="5368000" />
-      <workItem from="1612270614346" duration="3833000" />
+      <workItem from="1612270614346" duration="4857000" />
     </task>
     <servers />
   </component>
