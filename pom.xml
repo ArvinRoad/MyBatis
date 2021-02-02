@@ -13,6 +13,7 @@
         <module>Mybatis-01</module>
         <module>MyBatis-01-CRUD</module>
         <module>Mybatis-01-Map</module>
+        <module>MyBatis-02</module>
     </modules>
 
     <!--导入依赖-->
