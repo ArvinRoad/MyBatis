@@ -126,3 +126,11 @@ public class UserDaoTest {
     }
 }
 ```
+
+db.properties配置文件[SQL配置文件]
+```properties
+driver = com.mysql.jdbc.Driver
+url = jdbc:mysql://localhost:3306/mybatis?useSSL=false&;useUnicode=true&;characterEncoding=UTF-8
+username = root
+password = 1917723401Syc
+```

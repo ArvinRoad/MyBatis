@@ -4,7 +4,15 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
-    <environments default="development">
+
+    <!--引入外部配置文件-->
+    <properties resource="db.properties">
+        <!--还可以直接在这里使用-->
+        <property name="username" value="root"/>
+        <property name="password" value="1917723401"/>
+    </properties>
+
+    <environments default="properties">
         <environment id="development">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
@@ -12,6 +20,16 @@
                 <property name="url" value="jdbc:mysql://localhost:3306/mybatis?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;"/>
                 <property name="username" value="root"/>
                 <property name="password" value="1917723401Syc"/>
+            </dataSource>
+        </environment>
+
+        <environment id="properties">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
             </dataSource>
         </environment>
     </environments>
